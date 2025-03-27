@@ -47,6 +47,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
 -- actually setting up the LSP for languagues here, needs to be after mason setup
 require("lspconfig").lua_ls.setup {}
 
+-- godot setup
+require("lspconfig").gdscript.setup {}
 
 -- setup CMP to get autocompletion
 local cmp = require('cmp')
